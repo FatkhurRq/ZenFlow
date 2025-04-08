@@ -1,0 +1,161 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Tombol toggle menu */
+.menu-toggle {
+    background: none;
+    color: white;
+    font-size: 1.8em;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* Navbar */
+nav {
+    background-color: #2c3e50;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+}
+
+/* Responsif menu: sembunyikan nav di mobile */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #navLinks {
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #navLinks.show {
+        display: flex;
+    }
+}   
+
+
+/* Konten Utama */
+main {
+    padding: 30px 15px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    margin-top: 30px;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}

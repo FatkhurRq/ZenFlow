@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring & Laporan Kesehatan Mental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+          <h1 class="logo">StressCare</h1>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+        <nav id="navbar">
+          <ul>
+            <li><a href="home.html">Beranda</a></li>
+            <li><a href="faceid.html">Deteksi Stres</a></li>
+            <li><a href="musik.html">Musik Terapi</a></li>
+            <li><a href="laporan.html">Laporan</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+    <main>
+        <h1>Monitoring & Laporan Kesehatan Mental</h1>
+        <section>
+            <p>Grafik perkembangan stres Anda berdasarkan deteksi Face ID. Lihat laporan harian, mingguan, atau bulanan Anda.</p>
+            <button onclick="generateReport()">Lihat Laporan</button>
+            <div id="report"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Website Stres & Terapi. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        function generateReport() {
+            // Simulasi data laporan
+            document.getElementById("report").innerHTML = "<p>Laporan Stres: Normal (Rendah)</p>";
+        }
+        src="faceid.html"
+    </script>
+</body>
+</html>
