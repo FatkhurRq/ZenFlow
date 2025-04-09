@@ -87,6 +87,10 @@
     line-height: 1.6;
   }
   
+  .deskripsi {
+    text-align: justify;
+  }
+
   /* Tombol */
   button {
     padding: 12px 24px;
