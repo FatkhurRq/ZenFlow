@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terapi Musik & Relaksasi</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-size: cover;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .logo {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li {
+      margin: 0.3rem 0.8rem;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 2rem auto;
+      max-width: 600px;
+      border-radius: 1rem;
+      color: #333;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+      }
+
+      .nav-links li {
+        margin: 0.5rem 0;
+      }
+
+      main {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">StressCare</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="faceid.html">Deteksi Stres</a></li>
+        <li><a href="musik.html">Musik Terapi</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Terapi Musik & Relaksasi</h1>
+    <h2>Rekomendasi Terapi Berdasarkan Stres Anda</h2>
+    <ul>
+      <li><strong>Musik Relaksasi:</strong> Suara alam, musik instrumental, atau binaural beats.</li>
+      <li><strong>Meditasi Panduan:</strong> Audio meditasi untuk membantu ketenangan.</li>
+      <li><strong>White Noise & ASMR:</strong> Suara latar menenangkan seperti hujan atau ombak.</li>
+      <li><strong>Latihan Pernapasan:</strong> Instruksi teknik pernapasan untuk relaksasi.</li>
+    </ul>
+    <button onclick="window.location.href='premium.html'">Dapatkan Terapi Premium</button>
+  </main>
+
+  <footer>
+    &copy; 2025 Website Stres & Terapi. Semua hak dilindungi.
+  </footer>
+</body>
+</html>
