@@ -56,9 +56,9 @@
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    padding: 8px 12px;
+    padding: 0px;
     border-radius: 6px;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
   }
   
   .nav-links li a:hover {
@@ -128,13 +128,13 @@
   /* Responsif */
   @media (max-width: 768px) {
     .nav-container {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       gap: 10px;
     }
   
     .nav-links {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
   
